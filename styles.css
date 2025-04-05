@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Aclonica', sans-serif;
+  background: linear-gradient(to top, #224b5aa1, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f0f0f0bb;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00000055;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tetris {
+  font-size: 32px;
+  animation: colorChange 2s infinite;
+}
+
+.by {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#update {
+  background: #ffffff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.game-area {
+  display: flex;
+  gap: 20px;
+}
+
+canvas {
+  border: 2px solid #000;
+  background: #fff;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.score, .level {
+  font-size: 24px;
+  font-weight: bold;
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.controls button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+@keyframes colorChange {
+  0%, 100% { color: white; text-shadow: 0 0 5px #000; }
+  50% { color: #05507c; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+}

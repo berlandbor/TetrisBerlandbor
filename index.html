@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tetris berlandbor ❤️</title>
+  <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="div">
+
+    <header class="header">
+      <h1 class="tetris">TETRIS</h1>
+      <p class="by">berlandbor ❤️</p>
+      <button id="update" onclick="обновитьСтраницу()">🔃</button>
+    </header>
+
+    <main class="game-area">
+      <canvas id="maincanvas" width="240" height="400"></canvas>
+
+      <div class="side-panel">
+        <label>Score:</label>
+        <div id="score" class="score">0</div>
+        <label>Level:</label>
+        <div id="level" class="level">1</div>
+        <label>Next piece:</label>
+        <canvas id="subcanvas" width="96" height="96"></canvas>
+      </div>
+    </main>
+
+    <div class="controls">
+      <button id="left">⬅️</button>
+      <button id="right">➡️</button>
+      <button id="rotate">↪️</button>
+      <button id="rotatealt">↩️</button>
+      <button id="down">⬇️</button>
+    </div>
+
+    <div class="game-controls">
+      <button id="playBtn">▶️ Play</button>
+      <button id="pauseBtn">⏸️ Pause</button>
+      <button id="resetBtn">🔄 Новая игра</button>
+    </div>
+
+  </div>
+
+  <script src="Tetris.js"></script>
+</body>
+</html>
